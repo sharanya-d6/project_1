@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bucket List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
+        <h1>My Personal Bucket List</h1>
+        <p>Welcome to my bucket list! If you can dream it, you can do it!.. ✨</p>
+    </header>
+    <main>
+        <section class="bucket-list">
+            <h2>Travel <span class="icon">✈️</span></h2>
+            <img src="travel.jpg" alt="Travel" class="category-image">
+            <ul id="travel-list"></ul>
+            <h2>Skills <span class="icon">🛠️</span></h2>
+            <img src="skills.jpg" alt="Skills" class="category-image">
+            <ul id="skills-list"></ul>
+            <h2>Life Goals <span class="icon">🌟</span></h2>
+            <img src="goals.jpg" alt="Life Goals" class="category-image">
+            <ul id="goals-list"></ul>
+        </section>
+        <section class="add-item">
+            <h2>Add New Item</h2>
+            <form id="add-item-form">
+                <input type="text" id="new-item" placeholder="Enter new bucket list item" required>
+                <select id="category" required>
+                    <option value="travel">Travel</option>
+                    <option value="skills">Skills</option>
+                    <option value="goals">Life Goals</option>
+                </select>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 My Bucket List</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

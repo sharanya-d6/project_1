@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Bucket List</h1>
+        <p>Add your goals and track them! 🌟</p>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <input type="text" id="bucket-input" placeholder="Enter a new goal...">
+            <select id="category-select">
+                <option value="travel">🌍 Travel</option>
+                <option value="learning">🎓 Learning</option>
+                <option value="life">🏆 Life Goals</option>
+            </select>
+            <button onclick="addItem()">Add Goal</button>
+        </section>
+
+        <section class="bucket-list">
+            <h2>🌍 Travel Goals</h2>
+            <ul id="travel-list"></ul>
+
+            <h2>🎓 Learning Goals</h2>
+            <ul id="learning-list"></ul>
+
+            <h2>🏆 Life Goals</h2>
+            <ul id="life-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by [Your Name] | If you can dream it, you can do it!.. ✨</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
